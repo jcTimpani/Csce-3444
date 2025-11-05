@@ -1,0 +1,6 @@
+[
+  {"id":1,"name":"Willis Library","lat":33.211327,"lng":-97.148403,"category":"academic","description":"Central library on the main UNT campus."},
+  {"id":2,"name":"University Union","lat":33.210262,"lng":-97.1494,"category":"dining","description":"Student union with dining and lounges."},
+  {"id":3,"name":"Discovery Park","lat":33.2464,"lng":-97.1531,"category":"academic","description":"Engineering and CS campus north of main UNT campus."},
+  {"id":4,"name":"Parking Garage #1","lat":33.2117,"lng":-97.1518,"category":"parking","description":"Multi-level parking near the library."}
+]
