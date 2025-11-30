@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "name": "Willis Library",
+    "category": "academic",
+    "lat": 33.2104,
+    "lng": -97.1486,
+    "description": "Main library on campus."
+  },
+  {
+    "id": 2,
+    "name": "Discovery Park",
+    "category": "academic",
+    "lat": 33.2461,
+    "lng": -97.1536,
+    "description": "Engineering and science campus."
+  },
+  {
+    "id": 3,
+    "name": "University Union",
+    "category": "other",
+    "lat": 33.2098926,
+    "lng": -97.1514762497725,
+    "description": "Student center with food, offices, and study spaces."
+  },
+  {
+    "id": 4,
+    "name": "Bruce Hall",
+    "category": "other",
+    "lat": 33.2085,
+    "lng": -97.1552,
+    "description": "Residence hall for students."
+  },
+
+  {
+    "id": 5,
+    "name": "Campus Parking Lot F",
+    "category": "parking",
+    "lat": 33.2089,
+    "lng": -97.1512,
+    "description": "Student parking lot."
+  },
+  {
+    "id": 9,
+    "name": "Parking Garage A",
+    "category": "parking",
+    "lat": 33.2098,
+    "lng": -97.1508,
+    "description": "Multi-level parking garage for students and staff."
+  },
+
+  {
+    "id": 10,
+    "name": "General Academic Building (GAB)",
+    "category": "academic",
+    "lat": 33.2109,
+    "lng": -97.1505,
+    "description": "Classrooms and lecture halls in the center of campus."
+  },
+  {
+    "id": 11,
+    "name": "Business Leadership Building (BLB)",
+    "category": "academic",
+    "lat": 33.2103,
+    "lng": -97.1528,
+    "description": "College of Business classrooms and offices."
+  },
+  {
+    "id": 12,
+    "name": "UNT Life Science Complex",
+    "category": "academic",
+    "lat": 33.2115,
+    "lng": -97.1540,
+    "description": "Biology and life sciences classrooms and labs."
+  },
+  {
+    "id": 13,
+    "name": "Music Building",
+    "category": "academic",
+    "lat": 33.2098,
+    "lng": -97.1510,
+    "description": "College of Music classrooms, rehearsal spaces, and offices."
+  },
+  {
+    "id": 14,
+    "name": "Art Building",
+    "category": "academic",
+    "lat": 33.21307,
+    "lng": -97.14546,
+    "description": "Studios and classrooms for visual arts."
+  },
+
+  {
+    "id": 15,
+    "name": "Pohl Recreation Center",
+    "category": "other",
+    "lat": 33.2077,
+    "lng": -97.1544,
+    "description": "Campus gym and recreation center."
+  },
+  {
+    "id": 16,
+    "name": "Kerr Hall",
+    "category": "other",
+    "lat": 33.2095,
+    "lng": -97.1570,
+    "description": "Residence hall for students."
+  },
+  {
+    "id": 17,
+    "name": "Maple Hall",
+    "category": "other",
+    "lat": 33.2101,
+    "lng": -97.1565,
+    "description": "Residence hall near central campus."
+  },
+  {
+    "id": 18,
+    "name": "Rawlins Hall",
+    "category": "other",
+    "lat": 33.2090,
+    "lng": -97.1558,
+    "description": "Residence hall close to Pohl Rec Center."
+  },
+
+  {
+    "id": 19,
+    "name": "Parking Lot 1 (Placeholder)",
+    "category": "parking",
+    "lat": 33.2100,
+    "lng": -97.1530,
+    "description": "Replace with real parking lot name and coordinates."
+  },
+  {
+    "id": 20,
+    "name": "Parking Lot 2 (Placeholder)",
+    "category": "parking",
+    "lat": 33.2110,
+    "lng": -97.1540,
+    "description": "Replace with real parking lot name and coordinates."
+  },
+  {
+    "id": 21,
+    "name": "Parking Lot 3 (Placeholder)",
+    "category": "parking",
+    "lat": 33.2120,
+    "lng": -97.1550,
+    "description": "Replace with real parking lot name and coordinates."
+  },
+
+  {
+    "id": 6,
+    "name": "Chick-fil-A @ Union",
+    "category": "dining",
+    "lat": 3321088,
+    "lng": -97.14742,
+    "description": "Dining option inside the University Union."
+  },
+  {
+    "id": 7,
+    "name": "Mean Greens Café",
+    "category": "dining",
+    "lat": 33.2100,
+    "lng": -97.1520,
+    "description": "Café with healthy options for students."
+  },
+  {
+    "id": 8,
+    "name": "Apogee Stadium",
+    "category": "other",
+    "lat": 33.2078,
+    "lng": -97.1560,
+    "description": "Home of UNT football games."
+  }
+]

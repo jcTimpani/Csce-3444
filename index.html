@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +11,41 @@
   <header class="top-bar"><h1>UNT Interactive Campus Map</h1></header>
   <div class="layout">
     <aside class="sidebar">
+
       <div class="sidebar-section">
         <h2>Search</h2>
         <input type="text" id="searchInput" placeholder="Search buildings…" />
+        <ul id= " autocompletelist" class="autocomplete-List"></ul>
+
+        <div id="directionsContainer"></div>
       </div>
+
+
       <div class="sidebar-section">
         <h2>Categories</h2>
-        <label><input type="checkbox" class="category-filter" value="academic" checked /> Academic</label><br/>
-        <label><input type="checkbox" class="category-filter" value="dining" checked /> Dining</label><br/>
-        <label><input type="checkbox" class="category-filter" value="parking" checked /> Parking</label><br/>
-        <label><input type="checkbox" class="category-filter" value="other" checked /> Other</label>
+        <label><input type="checkbox" class="category-filter" value="academic" /> Academic</label><br/>
+        <label><input type="checkbox" class="category-filter" value="dining" /> Dining</label><br/>
+        <label><input type="checkbox" class="category-filter" value="parking" /> Parking</label><br/>
+        <label><input type="checkbox" class="category-filter" value="other" /> Other</label>
       </div>
+
+ 
       <div class="sidebar-section">
         <h2>Locations</h2>
         <ul id="locationList"></ul>
       </div>
+
     </aside>
-    <main class="map-container"><div id="map"></div></main>
+
+
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
   </div>
+
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
