@@ -3,16 +3,17 @@
     "id": 1,
     "name": "Willis Library",
     "category": "academic",
-    "lat": 33.2104,
-    "lng": -97.1486,
+    "lat": 33.2108,
+    "lng": -97.14897,
     "description": "Main library on campus."
   },
   {
     "id": 2,
     "name": "Discovery Park",
     "category": "academic",
-    "lat": 33.2461,
-    "lng": -97.1536,
+    "lat": 33.252727,
+    "lng": -97.152466
+    ,
     "description": "Engineering and science campus."
   },
   {
@@ -53,8 +54,8 @@
     "id": 10,
     "name": "General Academic Building (GAB)",
     "category": "academic",
-    "lat": 33.2109,
-    "lng": -97.1505,
+    "lat": 33.21303,
+    "lng": -97.14821,
     "description": "Classrooms and lecture halls in the center of campus."
   },
   {

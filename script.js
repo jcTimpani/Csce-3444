@@ -1,7 +1,7 @@
 const UNT_CENTER = [33.2075, -97.1526];
 let map, markers = [], locationsData = [], routingControl = null;
 
-// Initialize map
+
 function initMap() {
   map = L.map("map", { center: UNT_CENTER, zoom: 15 });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -10,7 +10,7 @@ function initMap() {
   }).addTo(map);
 }
 
-// Create marker
+
 function createMarker(loc) {
   const m = L.marker([loc.lat, loc.lng]).addTo(map);
   m.bindPopup(`<strong>${loc.name}</strong><br>${loc.description || ""}`);
@@ -18,13 +18,13 @@ function createMarker(loc) {
   return m;
 }
 
-// Render markers
+
 function renderMarkers(locs) {
   markers.forEach(m => map.removeLayer(m));
   markers = locs.map(createMarker);
 }
 
-// Render sidebar list
+
 function renderList(locs) {
   const list = document.getElementById("locationList");
   list.innerHTML = "";
@@ -48,7 +48,7 @@ function renderList(locs) {
   });
 }
 
-// Focus a location
+
 function focusLocation(id) {
   const loc = locationsData.find(l => l.id === id);
   if (!loc) return;
@@ -58,7 +58,7 @@ function focusLocation(id) {
   showDirectionsButton(loc);
 }
 
-// Highlight list
+
 function highlightListItem(id) {
   const name = locationsData.find(l => l.id === id)?.name;
   document.querySelectorAll(".location-item").forEach(li => {
@@ -66,7 +66,7 @@ function highlightListItem(id) {
   });
 }
 
-// Filter locations
+
 function filterLocations() {
   const text = document.getElementById("searchInput").value.trim().toLowerCase();
   const activeCategories = Array.from(document.querySelectorAll(".category-filter"))
@@ -84,7 +84,7 @@ function filterLocations() {
   return filtered;
 }
 
-// Show directions button
+
 function showDirectionsButton(loc) {
   const container = document.getElementById("directionsContainer");
   container.innerHTML = "";
@@ -95,13 +95,13 @@ function showDirectionsButton(loc) {
   container.appendChild(btn);
 }
 
-// Clear directions button
+
 function clearDirectionsButton() {
   const container = document.getElementById("directionsContainer");
   if (container) container.innerHTML = "";
 }
 
-// Show route
+
 function showDirections(dest) {
   if (routingControl) map.removeControl(routingControl);
 
@@ -119,7 +119,7 @@ function showDirections(dest) {
   }
 }
 
-// Add route
+
 function addRoute(startLat, startLng, endLat, endLng) {
   routingControl = L.Routing.control({
     waypoints: [
@@ -133,7 +133,7 @@ function addRoute(startLat, startLng, endLat, endLng) {
   }).addTo(map);
 }
 
-// Initialize filters
+
 function initFilters() {
   const search = document.getElementById("searchInput");
   search.addEventListener("input", filterLocations);
@@ -149,14 +149,14 @@ function initFilters() {
   });
 }
 
-// Load locations
+
 async function loadLocations() {
   const res = await fetch("data/locations.json");
   locationsData = await res.json();
   filterLocations();
 }
 
-// On DOM ready
+
 window.addEventListener("DOMContentLoaded", () => {
   initMap();
   loadLocations().then(initFilters);
