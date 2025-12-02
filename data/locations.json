@@ -1,47 +1,352 @@
 [
-  { "id": "art_building", "name": "Art Building", "lat": 33.2075, "lng": -97.1526, "description": "Art Building" },
-  { "id": "bruce_hall", "name": "Bruce Hall", "lat": 33.2075, "lng": -97.1526, "description": "Bruce Hall" },
-  { "id": "business_leadership_building", "name": "Business Leadership Building", "lat": 33.2075, "lng": -97.1526, "description": "Business Leadership Building" },
-  { "id": "chemistry_building", "name": "Chemistry Building", "lat": 33.2075, "lng": -97.1526, "description": "Chemistry Building" },
-  { "id": "chestnut_hall", "name": "Chestnut Hall", "lat": 33.2075, "lng": -97.1526, "description": "Chestnut Hall" },
-  { "id": "chilton_hall", "name": "Chilton Hall", "lat": 33.2075, "lng": -97.1526, "description": "Chilton Hall" },
-  { "id": "clark_hall", "name": "Clark Hall", "lat": 33.2075, "lng": -97.1526, "description": "Clark Hall" },
-  { "id": "coliseum", "name": "Coliseum", "lat": 33.2075, "lng": -97.1526, "description": "Coliseum" },
-  { "id": "crumley_hall", "name": "Crumley Hall", "lat": 33.2075, "lng": -97.1526, "description": "Crumley Hall" },
-  { "id": "dance_and_theatre", "name": "Dance and Theatre", "lat": 33.2075, "lng": -97.1526, "description": "Dance and Theatre" },
-  { "id": "eagle_landing", "name": "Eagle Landing", "lat": 33.2075, "lng": -97.1526, "description": "Eagle Landing" },
-  { "id": "environmental_science_building", "name": "Environmental Science Building", "lat": 33.2075, "lng": -97.1526, "description": "Environmental Science Building" },
-  { "id": "gateway_center", "name": "Gateway Center", "lat": 33.2075, "lng": -97.1526, "description": "Gateway Center" },
-  { "id": "general_academic_building", "name": "General Academic Building", "lat": 33.2075, "lng": -97.1526, "description": "General Academic Building" },
-  { "id": "hickory_hall", "name": "Hickory Hall", "lat": 33.2075, "lng": -97.1526, "description": "Hickory Hall" },
-  { "id": "honors_hall", "name": "Honors Hall", "lat": 33.2075, "lng": -97.1526, "description": "Honors Hall" },
-  { "id": "hurley_administration_building", "name": "Hurley Administration Building", "lat": 33.2075, "lng": -97.1526, "description": "Hurley Administration Building" },
-  { "id": "joe_green_hall", "name": "Joe Green Hall", "lat": 33.2075, "lng": -97.1526, "description": "Joe Green Hall" },
-  { "id": "kerr_hall", "name": "Kerr Hall", "lat": 33.2075, "lng": -97.1526, "description": "Kerr Hall" },
-  { "id": "language_building", "name": "Language Building", "lat": 33.2075, "lng": -97.1526, "description": "Language Building" },
-  { "id": "legends_hall", "name": "Legends Hall", "lat": 33.2075, "lng": -97.1526, "description": "Legends Hall" },
-  { "id": "life_science_complex", "name": "Life Science Complex", "lat": 33.2075, "lng": -97.1526, "description": "Life Science Complex" },
-  { "id": "maple_hall", "name": "Maple Hall", "lat": 33.2075, "lng": -97.1526, "description": "Maple Hall" },
-  { "id": "matthews_hall", "name": "Matthews Hall", "lat": 33.2075, "lng": -97.1526, "description": "Matthews Hall" },
-  { "id": "mcconnell_hall", "name": "McConnell Hall", "lat": 33.2075, "lng": -97.1526, "description": "McConnell Hall" },
-  { "id": "mozart_square_hall", "name": "Mozart Square Hall", "lat": 33.2075, "lng": -97.1526, "description": "Mozart Square Hall" },
-  { "id": "music_building", "name": "Music Building", "lat": 33.2075, "lng": -97.1526, "description": "Music Building" },
-  { "id": "music_practice_north", "name": "Music Practice North", "lat": 33.2075, "lng": -97.1526, "description": "Music Practice North" },
-  { "id": "music_practice_south", "name": "Music Practice South", "lat": 33.2075, "lng": -97.1526, "description": "Music Practice South" },
-  { "id": "performing_arts_center", "name": "Performing Arts Center", "lat": 33.2075, "lng": -97.1526, "description": "Performing Arts Center" },
-  { "id": "pohl_recreation_center", "name": "Pohl Recreation Center", "lat": 33.2075, "lng": -97.1526, "description": "Pohl Recreation Center" },
-  { "id": "radio_tv_film_performing_arts", "name": "Radio, TV, Film & Performing Arts", "lat": 33.2075, "lng": -97.1526, "description": "Radio, TV, Film & Performing Arts" },
-  { "id": "rawlins_hall", "name": "Rawlins Hall", "lat": 33.2075, "lng": -97.1526, "description": "Rawlins Hall" },
-  { "id": "sage_hall", "name": "Sage Hall", "lat": 33.2075, "lng": -97.1526, "description": "Sage Hall" },
-  { "id": "santa_fe_square_hall", "name": "Santa Fe Square Hall", "lat": 33.2075, "lng": -97.1526, "description": "Santa Fe Square Hall" },
-  { "id": "science_research_building", "name": "Science Research Building", "lat": 33.2075, "lng": -97.1526, "description": "Science Research Building" },
-  { "id": "sycamore_hall", "name": "Sycamore Hall", "lat": 33.2075, "lng": -97.1526, "description": "Sycamore Hall" },
-  { "id": "terrill_hall", "name": "Terrill Hall", "lat": 33.2075, "lng": -97.1526, "description": "Terrill Hall" },
-  { "id": "traditions_hall", "name": "Traditions Hall", "lat": 33.2075, "lng": -97.1526, "description": "Traditions Hall" },
-  { "id": "university_union", "name": "University Union", "lat": 33.2075, "lng": -97.1526, "description": "University Union" },
-  { "id": "victory_hall", "name": "Victory Hall", "lat": 33.2075, "lng": -97.1526, "description": "Victory Hall" },
-  { "id": "welcome_center", "name": "Welcome Center", "lat": 33.2075, "lng": -97.1526, "description": "Welcome Center" },
-  { "id": "west_hall", "name": "West Hall", "lat": 33.2075, "lng": -97.1526, "description": "West Hall" },
-  { "id": "willis_library", "name": "Willis Library", "lat": 33.2075, "lng": -97.1526, "description": "Willis Library" },
-  { "id": "wooten_hall", "name": "Wooten Hall", "lat": 33.2075, "lng": -97.1526, "description": "Wooten Hall" }
+  {
+    "id": "art_building",
+    "name": "Art Building",
+    "lat": 33.213091,
+    "lng": -97.145458,
+    "description": "Art Building"
+  },
+  {
+    "id": "auditorium_building",
+    "name": "Auditorium Building",
+    "lat": 33.21411105345911,
+    "lng": -97.14729949191965,
+    "description": "Auditorium Building"
+  },
+  {
+    "id": "bruce_hall",
+    "name": "Bruce Hall",
+    "lat": 33.212131,
+    "lng": -97.150358,
+    "description": "Bruce Hall"
+  },
+  {
+    "id": "business_leadership_building",
+    "name": "Business Leadership Building",
+    "lat": 33.208793482836704,
+    "lng": -97.14771437487585,
+    "description": "Business Leadership Building"
+  },
+  {
+    "id": "chemistry_building",
+    "name": "Chemistry Building",
+    "lat": 33.214107,
+    "lng": -97.149988,
+    "description": "Chemistry Building"
+  },
+  {
+    "id": "chestnut_hall",
+    "name": "Chestnut Hall",
+    "lat": 33.21222,
+    "lng": -97.15255,
+    "description": "Chestnut Hall"
+  },
+  {
+    "id": "chilton_hall",
+    "name": "Chilton Hall",
+    "lat": 33.211037,
+    "lng": -97.151264,
+    "description": "Chilton Hall"
+  },
+  {
+    "id": "clark_hall",
+    "name": "Clark Hall",
+    "lat": 33.208035283506746,
+    "lng": -97.1514214607073,
+    "description": "Clark Hall"
+  },
+  {
+    "id": "coliseum",
+    "name": "Coliseum",
+    "lat": 33.20858164965166,
+    "lng": -97.15410422344976,
+    "description": "Coliseum"
+  },
+  {
+    "id": "crumley_hall",
+    "name": "Crumley Hall",
+    "lat": 33.209015,
+    "lng": -97.149407,
+    "description": "Crumley Hall"
+  },
+  {
+    "id": "curry_hall",
+    "name": "Curry Hall",
+    "lat": 33.21356358475173,
+    "lng": -97.14662651204546,
+    "description": "Curry Hall"
+  },
+  {
+    "id": "dance_and_theatre",
+    "name": "Dance and Theatre",
+    "lat": 33.21212558535802,
+    "lng": -97.14164602817795,
+    "description": "Dance and Theatre"
+  },
+  {
+    "id": "eagle_landing",
+    "name": "Eagle Landing",
+    "lat": 33.20855138772055,
+    "lng": -97.14675790702246,
+    "description": "Eagle Landing"
+  },
+  {
+    "id": "environmental_science_building",
+    "name": "Environmental Science Building",
+    "lat": 33.21413750100684,
+    "lng": -97.15132114229306,
+    "description": "Environmental Science Building"
+  },
+  {
+    "id": "gateway_center",
+    "name": "Gateway Center",
+    "lat": 33.20774126286355,
+    "lng": -97.154145127532,
+    "description": "Gateway Center"
+  },
+  {
+    "id": "general_academic_building",
+    "name": "General Academic Building",
+    "lat": 33.2131612,
+    "lng": -97.148094,
+    "description": "General Academic Building"
+  },
+  {
+    "id": "hickory_hall",
+    "name": "Hickory Hall",
+    "lat": 33.21424159298167,
+    "lng": -97.14795498693793,
+    "description": "Hickory Hall"
+  },
+  {
+    "id": "honors_hall",
+    "name": "Honors Hall",
+    "lat": 33.20700995723854,
+    "lng": -97.15170017057409,
+    "description": "Honors Hall"
+  },
+  {
+    "id": "hurley_administration_building",
+    "name": "Hurley Administration Building",
+    "lat": 33.211163018697555,
+    "lng": -97.14848259472176,
+    "description": "Hurley Administration Building"
+  },
+  {
+    "id": "joe_green_hall",
+    "name": "Joe Green Hall",
+    "lat": 33.20699848968762,
+    "lng": -97.14627482804677,
+    "description": "Joe Green Hall"
+  },
+  {
+    "id": "kerr_hall",
+    "name": "Kerr Hall",
+    "lat": 33.20774352069263,
+    "lng": -97.14732785469057,
+    "description": "Kerr Hall"
+  },
+  {
+    "id": "language_building",
+    "name": "Language Building",
+    "lat": 33.21409843243963,
+    "lng": -97.14662520970707,
+    "description": "Language Building"
+  },
+  {
+    "id": "legends_hall",
+    "name": "Legends Hall",
+    "lat": 33.213251422507405,
+    "lng": -97.15400922640633,
+    "description": "Legends Hall"
+  },
+  {
+    "id": "life_science_complex",
+    "name": "Life Science Complex",
+    "lat": 33.2121785071994,
+    "lng": -97.14886041247664,
+    "description": "Life Science Complex"
+  },
+  {
+    "id": "maple_hall",
+    "name": "Maple Hall",
+    "lat": 33.20800598756314,
+    "lng": -97.15002602920895,
+    "description": "Maple Hall"
+  },
+  {
+    "id": "marquis_hall",
+    "name": "Marquis Hall",
+    "lat": 33.21331070408461,
+    "lng": -97.14895382222387,
+    "description": "Marquis Hall"
+  },
+  {
+    "id": "matthews_hall",
+    "name": "Matthews Hall",
+    "lat": 33.209832,
+    "lng": -97.146566,
+    "description": "Matthews Hall"
+  },
+  {
+    "id": "mcconnell_hall",
+    "name": "McConnell Hall",
+    "lat": 33.21247379655852,
+    "lng": -97.15138875113476,
+    "description": "McConnell Hall"
+  },
+  {
+    "id": "mozart_square_hall",
+    "name": "Mozart Square Hall",
+    "lat": 33.20642433023779,
+    "lng": -97.15286556078564,
+    "description": "Mozart Square Hall"
+  },
+  {
+    "id": "music_building",
+    "name": "Music Building",
+    "lat": 33.21067670916855,
+    "lng": -97.15026003752413,
+    "description": "Music Building"
+  },
+  {
+    "id": "music_practice_north",
+    "name": "Music Practice North",
+    "lat": 33.21018742791101,
+    "lng": -97.15117148822007,
+    "description": "Music Practice North"
+  },
+  {
+    "id": "music_practice_south",
+    "name": "Music Practice South",
+    "lat": 33.209731670084146,
+    "lng": -97.15121202618224,
+    "description": "Music Practice South"
+  },
+  {
+    "id": "performing_arts_center",
+    "name": "Performing Arts Center",
+    "lat": 33.2064881452343,
+    "lng": -97.15517426475711,
+    "description": "Performing Arts Center"
+  },
+  {
+    "id": "physical_education_building",
+    "name": "Physical Education Building",
+    "lat": 33.21101851797338,
+    "lng": -97.15284107016717,
+    "description": "Physical Education Building"
+  },
+  {
+    "id": "physics_building",
+    "name": "Physics Building",
+    "lat": 33.213057627213956,
+    "lng": -97.14658619527879,
+    "description": "Physics Building"
+  },
+  {
+    "id": "pohl_recreation_center",
+    "name": "Pohl Recreation Center",
+    "lat": 33.21199383471756,
+    "lng": -97.15407884837157,
+    "description": "Pohl Recreation Center"
+  },
+  {
+    "id": "radio_tv_film_performing_arts",
+    "name": "Radio, TV, Film & Performing Arts",
+    "lat": 33.212042575845054,
+    "lng": -97.14578942101195,
+    "description": "Radio, TV, Film & Performing Arts"
+  },
+  {
+    "id": "rawlins_hall",
+    "name": "Rawlins Hall",
+    "lat": 33.207639534484706,
+    "lng": -97.1522925451028,
+    "description": "Rawlins Hall"
+  },
+  {
+    "id": "sage_hall",
+    "name": "Sage Hall",
+    "lat": 33.212203058295174,
+    "lng": -97.14674859360113,
+    "description": "Sage Hall"
+  },
+  {
+    "id": "santa_fe_square_hall",
+    "name": "Santa Fe Square Hall",
+    "lat": 33.21048583665512,
+    "lng": -97.1568654717475,
+    "description": "Santa Fe Square Hall"
+  },
+  {
+    "id": "science_research_building",
+    "name": "Science Research Building",
+    "lat": 33.214083363549925,
+    "lng": -97.14890476917104,
+    "description": "Science Research Building"
+  },
+  {
+    "id": "sycamore_hall",
+    "name": "Sycamore Hall",
+    "lat": 33.212144538856826,
+    "lng": -97.14811442003717,
+    "description": "Sycamore Hall"
+  },
+  {
+    "id": "terrill_hall",
+    "name": "Terrill Hall",
+    "lat": 33.213224087697355,
+    "lng": -97.1495792265541,
+    "description": "Terrill Hall"
+  },
+  {
+    "id": "traditions_hall",
+    "name": "Traditions Hall",
+    "lat": 33.210497773650694,
+    "lng": -97.15577649057366,
+    "description": "Traditions Hall"
+  },
+  {
+    "id": "university_union",
+    "name": "University Union",
+    "lat": 33.21079896548719,
+    "lng": -97.14716193239003,
+    "description": "University Union"
+  },
+  {
+    "id": "victory_hall",
+    "name": "Victory Hall",
+    "lat": 33.20231245026655,
+    "lng": -97.15795379216786,
+    "description": "Victory Hall"
+  },
+  {
+    "id": "welcome_center",
+    "name": "Welcome Center",
+    "lat": 33.20766410195064,
+    "lng": -97.14662708419455,
+    "description": "Welcome Center"
+  },
+  {
+    "id": "west_hall",
+    "name": "West Hall",
+    "lat": 33.211767735871796,
+    "lng": -97.15543914956102,
+    "description": "West Hall"
+  },
+  {
+    "id": "willis_library",
+    "name": "Willis Library",
+    "lat": 33.2101234,
+    "lng": -97.1490072,
+    "description": "Willis Library"
+  },
+  {
+    "id": "wooten_hall",
+    "name": "Wooten Hall",
+    "lat": 33.20986189397871,
+    "lng": -97.1456601414825,
+    "description": "Wooten Hall"
+  }
 ]
