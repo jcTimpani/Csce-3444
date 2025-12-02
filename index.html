@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>UNT Interactive Campus Map</title>
@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="top-bar"><h1>UNT Interactive Campus Map</h1></header>
+  <header class="top-bar">
+    <h1>UNT Interactive Campus Map</h1>
+  </header>
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-section">
@@ -18,19 +21,25 @@
       </div>
       <div class="sidebar-section">
         <h2>Categories</h2>
-        <label><input type="checkbox" class="category-filter" value="academic" checked /> Academic</label><br/>
-        <label><input type="checkbox" class="category-filter" value="dining" checked /> Dining</label><br/>
-        <label><input type="checkbox" class="category-filter" value="parking" checked /> Parking</label><br/>
+        <label><input type="checkbox" class="category-filter" value="academic" checked /> Academic</label><br />
+        <label><input type="checkbox" class="category-filter" value="dining" checked /> Dining</label><br />
+        <label><input type="checkbox" class="category-filter" value="parking" checked /> Parking</label><br />
         <label><input type="checkbox" class="category-filter" value="other" checked /> Other</label>
       </div>
       <div class="sidebar-section">
         <h2>Locations</h2>
-        <ul id="locationList"></ul>
+        <select id="buildingSelect">
+          <option value="">Select a building...</option>
+        </select>
+        <ul id="locationList" style="display:none;"></ul>
       </div>
     </aside>
-    <main class="map-container"><div id="map"></div></main>
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
