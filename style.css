@@ -49,10 +49,19 @@ body {
     border-color: #16a34a;
 }
 
-#buildingSelect {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+#locationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#showAllBtn {
+    background-color: #e5e7eb;
     border: 1px solid #ccc;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+#showAllBtn:hover {
+    background-color: #d1d5db;
 }
