@@ -5,7 +5,11 @@
     "lat": 33.213091,
     "lng": -97.145458,
     "description": "Art Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/art_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "auditorium_building",
