@@ -398,5 +398,37 @@
     "lng": -97.1456601414825,
     "description": "Wooten Hall",
     "category": "academic"
+  },
+  {
+    "id": "bruceteria",
+    "name": "Bruceteria",
+    "lat": 33.212215934997865,
+    "lng": -97.15036660244843,
+    "description": "Bruceteria",
+    "category": "dining"
+  },
+  {
+    "id": "kitchen_west",
+    "name": "Kitchen West",
+    "lat": 33.211832514093956,
+    "lng": -97.15558800918849,
+    "description": "Kitchen West",
+    "category": "dining"
+  },
+  {
+    "id": "champs",
+    "name": "Champs",
+    "lat": 33.202594560643114,
+    "lng": -97.15861703978419,
+    "description": "Champs",
+    "category": "dining"
+  },
+  {
+    "id": "mean_greens",
+    "name": "Mean Greens",
+    "lat": 33.20736752149068,
+    "lng": -97.15019110277937,
+    "description": "Mean Greens",
+    "category": "dining"
   }
 ]
