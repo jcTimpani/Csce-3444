@@ -5,7 +5,11 @@
     "lat": 33.213091,
     "lng": -97.145458,
     "description": "Art Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/art_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "auditorium_building",
@@ -13,7 +17,11 @@
     "lat": 33.21411105345911,
     "lng": -97.14729949191965,
     "description": "Auditorium Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/auditorium_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "bruce_hall",
@@ -21,7 +29,11 @@
     "lat": 33.212131,
     "lng": -97.150358,
     "description": "Bruce Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/bruce_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "business_leadership_building",
@@ -29,7 +41,11 @@
     "lat": 33.208793482836704,
     "lng": -97.14771437487585,
     "description": "Business Leadership Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/business_leadership_building.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "chemistry_building",
@@ -37,7 +53,11 @@
     "lat": 33.214107,
     "lng": -97.149988,
     "description": "Chemistry Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chemistry_building.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "chestnut_hall",
@@ -45,7 +65,11 @@
     "lat": 33.21222,
     "lng": -97.15255,
     "description": "Chestnut Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chestnut_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "chilton_hall",
@@ -53,7 +77,11 @@
     "lat": 33.211037,
     "lng": -97.151264,
     "description": "Chilton Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chilton_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "clark_hall",
@@ -61,7 +89,11 @@
     "lat": 33.208035283506746,
     "lng": -97.1514214607073,
     "description": "Clark Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/clark_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "coliseum",
@@ -69,7 +101,11 @@
     "lat": 33.20858164965166,
     "lng": -97.15410422344976,
     "description": "Coliseum",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/coliseum.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "crumley_hall",
@@ -77,7 +113,11 @@
     "lat": 33.209015,
     "lng": -97.149407,
     "description": "Crumley Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/crumley_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "curry_hall",
@@ -85,7 +125,11 @@
     "lat": 33.21356358475173,
     "lng": -97.14662651204546,
     "description": "Curry Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/curry_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "dance_and_theatre",
@@ -93,7 +137,11 @@
     "lat": 33.21212558535802,
     "lng": -97.14164602817795,
     "description": "Dance and Theatre",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/dance_and_theatre.pdf",
+      "floors": 1
+    }
   },
   {
     "id": "eagle_landing",
@@ -101,7 +149,11 @@
     "lat": 33.20855138772055,
     "lng": -97.14675790702246,
     "description": "Eagle Landing",
-    "category": "dining"
+    "category": "dining",
+    "floorMap": {
+      "file": "maps/eagle_landing.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "environmental_science_building",
@@ -109,7 +161,11 @@
     "lat": 33.21413750100684,
     "lng": -97.15132114229306,
     "description": "Environmental Science Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/environmental_science_building.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "gateway_center",
@@ -117,7 +173,11 @@
     "lat": 33.20774126286355,
     "lng": -97.154145127532,
     "description": "Gateway Center",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/gateway_center.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "general_academic_building",
@@ -125,7 +185,11 @@
     "lat": 33.2131612,
     "lng": -97.148094,
     "description": "General Academic Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/general_academic_building.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "hickory_hall",
@@ -133,7 +197,11 @@
     "lat": 33.21424159298167,
     "lng": -97.14795498693793,
     "description": "Hickory Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/hickory_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "honors_hall",
@@ -141,7 +209,11 @@
     "lat": 33.20700995723854,
     "lng": -97.15170017057409,
     "description": "Honors Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/honors_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "hurley_administration_building",
@@ -149,7 +221,11 @@
     "lat": 33.211163018697555,
     "lng": -97.14848259472176,
     "description": "Hurley Administration Building",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/hurley_administration_building.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "joe_green_hall",
@@ -157,7 +233,11 @@
     "lat": 33.20699848968762,
     "lng": -97.14627482804677,
     "description": "Joe Green Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/joe_green_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "kerr_hall",
@@ -165,7 +245,11 @@
     "lat": 33.20774352069263,
     "lng": -97.14732785469057,
     "description": "Kerr Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/kerr_hall.pdf",
+      "floors": 8
+    }
   },
   {
     "id": "language_building",
@@ -173,7 +257,11 @@
     "lat": 33.21409843243963,
     "lng": -97.14662520970707,
     "description": "Language Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/language_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "legends_hall",
@@ -181,7 +269,11 @@
     "lat": 33.213251422507405,
     "lng": -97.15400922640633,
     "description": "Legends Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/legends_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "life_science_complex",
@@ -189,7 +281,11 @@
     "lat": 33.2121785071994,
     "lng": -97.14886041247664,
     "description": "Life Science Complex",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/life_science_complex.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "maple_hall",
@@ -197,7 +293,11 @@
     "lat": 33.20800598756314,
     "lng": -97.15002602920895,
     "description": "Maple Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/maple_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "marquis_hall",
@@ -205,7 +305,11 @@
     "lat": 33.21331070408461,
     "lng": -97.14895382222387,
     "description": "Marquis Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/marquis_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "matthews_hall",
@@ -213,7 +317,11 @@
     "lat": 33.209832,
     "lng": -97.146566,
     "description": "Matthews Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/matthews_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "mcconnell_hall",
@@ -221,7 +329,11 @@
     "lat": 33.21247379655852,
     "lng": -97.15138875113476,
     "description": "McConnell Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/mcconnell_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "mozart_square_hall",
@@ -229,7 +341,11 @@
     "lat": 33.20642433023779,
     "lng": -97.15286556078564,
     "description": "Mozart Square Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/mozart_square_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "music_building",
@@ -237,7 +353,11 @@
     "lat": 33.21067670916855,
     "lng": -97.15026003752413,
     "description": "Music Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "music_practice_north",
@@ -245,7 +365,11 @@
     "lat": 33.21018742791101,
     "lng": -97.15117148822007,
     "description": "Music Practice North",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_practice_north.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "music_practice_south",
@@ -253,7 +377,11 @@
     "lat": 33.209731670084146,
     "lng": -97.15121202618224,
     "description": "Music Practice South",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_practice_south.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "performing_arts_center",
@@ -261,7 +389,11 @@
     "lat": 33.2064881452343,
     "lng": -97.15517426475711,
     "description": "Performing Arts Center",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/performing_arts_center.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "physical_education_building",
@@ -269,7 +401,11 @@
     "lat": 33.21101851797338,
     "lng": -97.15284107016717,
     "description": "Physical Education Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/physical_education_building.pdf",
+      "floors": 2
+    }
   },
   {
     "id": "physics_building",
@@ -277,7 +413,11 @@
     "lat": 33.213057627213956,
     "lng": -97.14658619527879,
     "description": "Physics Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/physics_building.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "pohl_recreation_center",
@@ -285,7 +425,11 @@
     "lat": 33.21199383471756,
     "lng": -97.15407884837157,
     "description": "Pohl Recreation Center",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/pohl_recreation_center.pdf",
+      "floors": 2
+    }
   },
   {
     "id": "radio_tv_film_performing_arts",
@@ -301,7 +445,11 @@
     "lat": 33.207639534484706,
     "lng": -97.1522925451028,
     "description": "Rawlins Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/rawlins_hall.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "sage_hall",
@@ -309,7 +457,11 @@
     "lat": 33.212203058295174,
     "lng": -97.14674859360113,
     "description": "Sage Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/sage_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "santa_fe_square_hall",
@@ -317,7 +469,11 @@
     "lat": 33.21048583665512,
     "lng": -97.1568654717475,
     "description": "Santa Fe Square Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/santa_fe_square_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "science_research_building",
@@ -325,7 +481,11 @@
     "lat": 33.214083363549925,
     "lng": -97.14890476917104,
     "description": "Science Research Building",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/science_research_building.pdf",
+      "floors": 2
+    }
   },
   {
     "id": "sycamore_hall",
@@ -333,7 +493,11 @@
     "lat": 33.212144538856826,
     "lng": -97.14811442003717,
     "description": "Sycamore Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/sycamore_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "terrill_hall",
@@ -341,7 +505,11 @@
     "lat": 33.213224087697355,
     "lng": -97.1495792265541,
     "description": "Terrill Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/terrill_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "traditions_hall",
@@ -349,7 +517,11 @@
     "lat": 33.210497773650694,
     "lng": -97.15577649057366,
     "description": "Traditions Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/traditions_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "university_union",
@@ -357,7 +529,11 @@
     "lat": 33.21079896548719,
     "lng": -97.14716193239003,
     "description": "University Union",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/university_union.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "victory_hall",
@@ -365,7 +541,11 @@
     "lat": 33.20231245026655,
     "lng": -97.15795379216786,
     "description": "Victory Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/victory_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "welcome_center",
@@ -373,7 +553,11 @@
     "lat": 33.20766410195064,
     "lng": -97.14662708419455,
     "description": "Welcome Center",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/welcome_center.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "west_hall",
@@ -381,7 +565,11 @@
     "lat": 33.211767735871796,
     "lng": -97.15543914956102,
     "description": "West Hall",
-    "category": "residence"
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/west_hall.pdf",
+      "floors": 3
+    }
   },
   {
     "id": "willis_library",
@@ -389,7 +577,11 @@
     "lat": 33.2101234,
     "lng": -97.1490072,
     "description": "Willis Library",
-    "category": "other"
+    "category": "other",
+    "floorMap": {
+      "file": "maps/willis_library.pdf",
+      "floors": 5
+    }
   },
   {
     "id": "wooten_hall",
@@ -397,7 +589,11 @@
     "lat": 33.20986189397871,
     "lng": -97.1456601414825,
     "description": "Wooten Hall",
-    "category": "academic"
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/wooten_hall.pdf",
+      "floors": 4
+    }
   },
   {
     "id": "bruceteria",
@@ -430,5 +626,17 @@
     "lng": -97.15019110277937,
     "description": "Mean Greens",
     "category": "dining"
+  },
+  {
+    "id": "datcu_stadium",
+    "name": "Datcu Stadium",
+    "lat": 33.20388484889255,
+    "lng": -97.15920983358363,
+    "description": "Datcu Stadium",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/datcu_stadium.pdf",
+      "floors": 6
+    }
   }
 ]

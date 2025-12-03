@@ -36,6 +36,24 @@
       <div id="map"></div>
     </main>
   </div>
+
+  <div id="mapModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Building Name</h2>
+        <button id="closeModalBtn">Return to Map</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdfViewer" src="" width="100%" height="500px"></iframe>
+        <div id="noMapMessage" style="display:none;">No map available for this building.</div>
+      </div>
+      <div class="modal-footer">
+        <button id="prevFloorBtn">Previous Floor</button>
+        <span id="floorIndicator">Floor 1</span>
+        <button id="nextFloorBtn">Next Floor</button>
+      </div>
+    </div>
+  </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
