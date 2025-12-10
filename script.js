@@ -2,8 +2,16 @@ const UNT_CENTER = [33.2075, -97.1526]; let map, markers = [], locationsData = [
 let currentBuilding = null;
 let currentFloorIndex = 0;
 function initMap() { map = L.map("map", { center: UNT_CENTER, zoom: 15 }); L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "&copy; OpenStreetMap" }).addTo(map); }
+const markerIcons = {
+    academic: new L.Icon.Default({ className: "marker-academic" }),
+    residence: new L.Icon.Default({ className: "marker-residence" }),
+    dining: new L.Icon.Default({ className: "marker-dining" }),
+    other: new L.Icon.Default({ className: "marker-other" })
+};
+
 function createMarker(l) {
-    const m = L.marker([l.lat, l.lng]).addTo(map);
+    const icon = markerIcons[l.category] || markerIcons.other;
+    const m = L.marker([l.lat, l.lng], { icon: icon }).addTo(map);
     const popupContent = `
     <strong>${l.name}</strong><br/>
     ${l.description || ""}<br/>
@@ -78,7 +86,9 @@ function updateModalView() {
 
         // Use URL fragment to navigate to specific page
         const pageNum = currentFloorIndex + 1;
-        pdfViewer.src = `${currentBuilding.floorMap.file}#page=${pageNum}`;
+        // Append unique query param (floor number) to force Chrome to reload the iframe
+        // Add view=Fit, toolbar=0, scrollbar=0 to force strict single page view
+        pdfViewer.src = `${currentBuilding.floorMap.file}?floor=${pageNum}#page=${pageNum}&view=Fit&toolbar=0&scrollbar=0`;
 
         floorIndicator.textContent = `Floor ${pageNum}`;
 
