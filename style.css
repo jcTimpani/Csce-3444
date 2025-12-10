@@ -153,3 +153,18 @@ body {
     font-size: 1.2em;
     color: #666;
 }
+.autocomplete-List {
+    list-style-type: none;  /* removes bullets */
+    padding: 0;              /* removes default padding */
+    margin: 0;               /* removes default margin */
+}
+
+.autocomplete-List li {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd; /* optional: separator line */
+}
+
+.autocomplete-List li:hover {
+    background-color: #f0f0f0;
+}
