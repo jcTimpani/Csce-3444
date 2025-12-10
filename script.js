@@ -2,9 +2,9 @@ const UNT_CENTER = [33.2075, -97.1526];
 let map, markers = [], locationsData = [];
 let currentBuilding = null;
 let currentFloorIndex = 0;
-let fuse; // Fuse.js instance
+let fuse; 
 
-// ------------------- Map Initialization -------------------
+
 function initMap() {
     map = L.map("map", { center: UNT_CENTER, zoom: 15 });
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -13,7 +13,6 @@ function initMap() {
     }).addTo(map);
 }
 
-// ------------------- Markers -------------------
 function createMarker(l) {
     const m = L.marker([l.lat, l.lng]).addTo(map);
     const popupContent = `
@@ -32,7 +31,7 @@ function renderMarkers(locs) {
     locs.forEach(l => markers.push(createMarker(l)));
 }
 
-// ------------------- Location List -------------------
+
 function renderList(locs) {
     const list = document.getElementById("locationList");
     list.innerHTML = "";
@@ -57,7 +56,7 @@ function highlightListItem(id) {
     });
 }
 
-// ------------------- Filters -------------------
+
 function filterLocations() {
     const checked = Array.from(document.querySelectorAll(".category-filter:checked")).map(c => c.value);
     const filtered = checked.length ? locationsData.filter(l => checked.includes(l.category)) : locationsData;
@@ -69,15 +68,15 @@ function filterLocations() {
 document.getElementById("showAllBtn").onclick = () => filterLocations();
 document.querySelectorAll(".category-filter").forEach(c => c.addEventListener("change", filterLocations));
 
-// ------------------- Load Locations -------------------
+
 async function loadLocations() {
     const r = await fetch("data/locations.json");
     locationsData = await r.json();
     filterLocations();
-    buildSearchIndex(); // Initialize Fuse.js
+    buildSearchIndex(); 
 }
 
-// ------------------- Fuse.js Search -------------------
+
 const searchInput = document.getElementById("searchInput");
 const autocompleteList = document.getElementById("autocompletelist");
 
@@ -114,11 +113,11 @@ function selectSearchResult(id) {
     const l = locationsData.find(x => x.id === id);
     if (!l) return;
 
-    renderMarkers([l]); // show only selected marker
+    renderMarkers([l]); 
     map.setView([l.lat, l.lng], 17);
     highlightListItem(id);
     autocompleteList.style.display = "none";
-    searchInput.value = ""; // optional: clear search input
+    searchInput.value = ""; 
 }
 
 searchInput.addEventListener("input", function () {
@@ -137,7 +136,7 @@ document.addEventListener("click", function (e) {
     }
 });
 
-// ------------------- Modal Logic -------------------
+
 function openBuildingMap(id) {
     const l = locationsData.find(x => x.id === id);
     if (!l) return;
@@ -207,7 +206,7 @@ document.getElementById("nextFloorBtn").onclick = () => {
     }
 };
 
-// ------------------- Initialize -------------------
+
 window.openBuildingMap = openBuildingMap;
 window.addEventListener("DOMContentLoaded", () => {
     initMap();
