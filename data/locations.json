@@ -1,176 +1,642 @@
 [
   {
-    "id": 1,
-    "name": "Willis Library",
-    "category": "academic",
-    "lat": 33.2108,
-    "lng": -97.14897,
-    "description": "Main library on campus."
-  },
-  {
-    "id": 2,
-    "name": "Discovery Park",
-    "category": "academic",
-    "lat": 33.252727,
-    "lng": -97.152466
-    ,
-    "description": "Engineering and science campus."
-  },
-  {
-    "id": 3,
-    "name": "University Union",
-    "category": "other",
-    "lat": 33.2098926,
-    "lng": -97.1514762497725,
-    "description": "Student center with food, offices, and study spaces."
-  },
-  {
-    "id": 4,
-    "name": "Bruce Hall",
-    "category": "other",
-    "lat": 33.2085,
-    "lng": -97.1552,
-    "description": "Residence hall for students."
-  },
-
-  {
-    "id": 5,
-    "name": "Campus Parking Lot F",
-    "category": "parking",
-    "lat": 33.2089,
-    "lng": -97.1512,
-    "description": "Student parking lot."
-  },
-  {
-    "id": 9,
-    "name": "Parking Garage A",
-    "category": "parking",
-    "lat": 33.2098,
-    "lng": -97.1508,
-    "description": "Multi-level parking garage for students and staff."
-  },
-
-  {
-    "id": 10,
-    "name": "General Academic Building (GAB)",
-    "category": "academic",
-    "lat": 33.21303,
-    "lng": -97.14821,
-    "description": "Classrooms and lecture halls in the center of campus."
-  },
-  {
-    "id": 11,
-    "name": "Business Leadership Building (BLB)",
-    "category": "academic",
-    "lat": 33.2103,
-    "lng": -97.1528,
-    "description": "College of Business classrooms and offices."
-  },
-  {
-    "id": 12,
-    "name": "UNT Life Science Complex",
-    "category": "academic",
-    "lat": 33.2115,
-    "lng": -97.1540,
-    "description": "Biology and life sciences classrooms and labs."
-  },
-  {
-    "id": 13,
-    "name": "Music Building",
-    "category": "academic",
-    "lat": 33.2098,
-    "lng": -97.1510,
-    "description": "College of Music classrooms, rehearsal spaces, and offices."
-  },
-  {
-    "id": 14,
+    "id": "art_building",
     "name": "Art Building",
+    "lat": 33.213091,
+    "lng": -97.145458,
+    "description": "Art Building",
     "category": "academic",
-    "lat": 33.21307,
-    "lng": -97.14546,
-    "description": "Studios and classrooms for visual arts."
+    "floorMap": {
+      "file": "maps/art_building.pdf",
+      "floors": 4
+    }
   },
-
   {
-    "id": 15,
-    "name": "Pohl Recreation Center",
+    "id": "auditorium_building",
+    "name": "Auditorium Building",
+    "lat": 33.21411105345911,
+    "lng": -97.14729949191965,
+    "description": "Auditorium Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/auditorium_building.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "bruce_hall",
+    "name": "Bruce Hall",
+    "lat": 33.212131,
+    "lng": -97.150358,
+    "description": "Bruce Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/bruce_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "business_leadership_building",
+    "name": "Business Leadership Building",
+    "lat": 33.208793482836704,
+    "lng": -97.14771437487585,
+    "description": "Business Leadership Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/business_leadership_building.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "chemistry_building",
+    "name": "Chemistry Building",
+    "lat": 33.214107,
+    "lng": -97.149988,
+    "description": "Chemistry Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chemistry_building.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "chestnut_hall",
+    "name": "Chestnut Hall",
+    "lat": 33.21222,
+    "lng": -97.15255,
+    "description": "Chestnut Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chestnut_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "chilton_hall",
+    "name": "Chilton Hall",
+    "lat": 33.211037,
+    "lng": -97.151264,
+    "description": "Chilton Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/chilton_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "clark_hall",
+    "name": "Clark Hall",
+    "lat": 33.208035283506746,
+    "lng": -97.1514214607073,
+    "description": "Clark Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/clark_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "coliseum",
+    "name": "Coliseum",
+    "lat": 33.20858164965166,
+    "lng": -97.15410422344976,
+    "description": "Coliseum",
     "category": "other",
-    "lat": 33.2077,
-    "lng": -97.1544,
-    "description": "Campus gym and recreation center."
+    "floorMap": {
+      "file": "maps/coliseum.pdf",
+      "floors": 3
+    }
   },
   {
-    "id": 16,
+    "id": "crumley_hall",
+    "name": "Crumley Hall",
+    "lat": 33.209015,
+    "lng": -97.149407,
+    "description": "Crumley Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/crumley_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "curry_hall",
+    "name": "Curry Hall",
+    "lat": 33.21356358475173,
+    "lng": -97.14662651204546,
+    "description": "Curry Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/curry_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "dance_and_theatre",
+    "name": "Dance and Theatre",
+    "lat": 33.21212558535802,
+    "lng": -97.14164602817795,
+    "description": "Dance and Theatre",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/dance_and_theatre.pdf",
+      "floors": 1
+    }
+  },
+  {
+    "id": "eagle_landing",
+    "name": "Eagle Landing",
+    "lat": 33.20855138772055,
+    "lng": -97.14675790702246,
+    "description": "Eagle Landing",
+    "category": "dining",
+    "floorMap": {
+      "file": "maps/eagle_landing.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "environmental_science_building",
+    "name": "Environmental Science Building",
+    "lat": 33.21413750100684,
+    "lng": -97.15132114229306,
+    "description": "Environmental Science Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/environmental_science_building.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "gateway_center",
+    "name": "Gateway Center",
+    "lat": 33.20774126286355,
+    "lng": -97.154145127532,
+    "description": "Gateway Center",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/gateway_center.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "general_academic_building",
+    "name": "General Academic Building",
+    "lat": 33.2131612,
+    "lng": -97.148094,
+    "description": "General Academic Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/general_academic_building.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "hickory_hall",
+    "name": "Hickory Hall",
+    "lat": 33.21424159298167,
+    "lng": -97.14795498693793,
+    "description": "Hickory Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/hickory_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "honors_hall",
+    "name": "Honors Hall",
+    "lat": 33.20700995723854,
+    "lng": -97.15170017057409,
+    "description": "Honors Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/honors_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "hurley_administration_building",
+    "name": "Hurley Administration Building",
+    "lat": 33.211163018697555,
+    "lng": -97.14848259472176,
+    "description": "Hurley Administration Building",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/hurley_administration_building.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "joe_green_hall",
+    "name": "Joe Green Hall",
+    "lat": 33.20699848968762,
+    "lng": -97.14627482804677,
+    "description": "Joe Green Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/joe_green_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "kerr_hall",
     "name": "Kerr Hall",
-    "category": "other",
-    "lat": 33.2095,
-    "lng": -97.1570,
-    "description": "Residence hall for students."
+    "lat": 33.20774352069263,
+    "lng": -97.14732785469057,
+    "description": "Kerr Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/kerr_hall.pdf",
+      "floors": 8
+    }
   },
   {
-    "id": 17,
+    "id": "language_building",
+    "name": "Language Building",
+    "lat": 33.21409843243963,
+    "lng": -97.14662520970707,
+    "description": "Language Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/language_building.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "legends_hall",
+    "name": "Legends Hall",
+    "lat": 33.213251422507405,
+    "lng": -97.15400922640633,
+    "description": "Legends Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/legends_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "life_science_complex",
+    "name": "Life Science Complex",
+    "lat": 33.2121785071994,
+    "lng": -97.14886041247664,
+    "description": "Life Science Complex",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/life_science_complex.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "maple_hall",
     "name": "Maple Hall",
-    "category": "other",
-    "lat": 33.2101,
-    "lng": -97.1565,
-    "description": "Residence hall near central campus."
+    "lat": 33.20800598756314,
+    "lng": -97.15002602920895,
+    "description": "Maple Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/maple_hall.pdf",
+      "floors": 3
+    }
   },
   {
-    "id": 18,
+    "id": "marquis_hall",
+    "name": "Marquis Hall",
+    "lat": 33.21331070408461,
+    "lng": -97.14895382222387,
+    "description": "Marquis Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/marquis_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "matthews_hall",
+    "name": "Matthews Hall",
+    "lat": 33.209832,
+    "lng": -97.146566,
+    "description": "Matthews Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/matthews_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "mcconnell_hall",
+    "name": "McConnell Hall",
+    "lat": 33.21247379655852,
+    "lng": -97.15138875113476,
+    "description": "McConnell Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/mcconnell_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "mozart_square_hall",
+    "name": "Mozart Square Hall",
+    "lat": 33.20642433023779,
+    "lng": -97.15286556078564,
+    "description": "Mozart Square Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/mozart_square_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "music_building",
+    "name": "Music Building",
+    "lat": 33.21067670916855,
+    "lng": -97.15026003752413,
+    "description": "Music Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_building.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "music_practice_north",
+    "name": "Music Practice North",
+    "lat": 33.21018742791101,
+    "lng": -97.15117148822007,
+    "description": "Music Practice North",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_practice_north.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "music_practice_south",
+    "name": "Music Practice South",
+    "lat": 33.209731670084146,
+    "lng": -97.15121202618224,
+    "description": "Music Practice South",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/music_practice_south.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "performing_arts_center",
+    "name": "Performing Arts Center",
+    "lat": 33.2064881452343,
+    "lng": -97.15517426475711,
+    "description": "Performing Arts Center",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/performing_arts_center.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "physical_education_building",
+    "name": "Physical Education Building",
+    "lat": 33.21101851797338,
+    "lng": -97.15284107016717,
+    "description": "Physical Education Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/physical_education_building.pdf",
+      "floors": 2
+    }
+  },
+  {
+    "id": "physics_building",
+    "name": "Physics Building",
+    "lat": 33.213057627213956,
+    "lng": -97.14658619527879,
+    "description": "Physics Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/physics_building.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "pohl_recreation_center",
+    "name": "Pohl Recreation Center",
+    "lat": 33.21199383471756,
+    "lng": -97.15407884837157,
+    "description": "Pohl Recreation Center",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/pohl_recreation_center.pdf",
+      "floors": 2
+    }
+  },
+  {
+    "id": "radio_tv_film_performing_arts",
+    "name": "Radio, TV, Film & Performing Arts",
+    "lat": 33.212042575845054,
+    "lng": -97.14578942101195,
+    "description": "Radio, TV, Film & Performing Arts",
+    "category": "academic"
+  },
+  {
+    "id": "rawlins_hall",
     "name": "Rawlins Hall",
+    "lat": 33.207639534484706,
+    "lng": -97.1522925451028,
+    "description": "Rawlins Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/rawlins_hall.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "sage_hall",
+    "name": "Sage Hall",
+    "lat": 33.212203058295174,
+    "lng": -97.14674859360113,
+    "description": "Sage Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/sage_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "santa_fe_square_hall",
+    "name": "Santa Fe Square Hall",
+    "lat": 33.21048583665512,
+    "lng": -97.1568654717475,
+    "description": "Santa Fe Square Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/santa_fe_square_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "science_research_building",
+    "name": "Science Research Building",
+    "lat": 33.214083363549925,
+    "lng": -97.14890476917104,
+    "description": "Science Research Building",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/science_research_building.pdf",
+      "floors": 2
+    }
+  },
+  {
+    "id": "sycamore_hall",
+    "name": "Sycamore Hall",
+    "lat": 33.212144538856826,
+    "lng": -97.14811442003717,
+    "description": "Sycamore Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/sycamore_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "terrill_hall",
+    "name": "Terrill Hall",
+    "lat": 33.213224087697355,
+    "lng": -97.1495792265541,
+    "description": "Terrill Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/terrill_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "traditions_hall",
+    "name": "Traditions Hall",
+    "lat": 33.210497773650694,
+    "lng": -97.15577649057366,
+    "description": "Traditions Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/traditions_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "university_union",
+    "name": "University Union",
+    "lat": 33.21079896548719,
+    "lng": -97.14716193239003,
+    "description": "University Union",
     "category": "other",
-    "lat": 33.2090,
-    "lng": -97.1558,
-    "description": "Residence hall close to Pohl Rec Center."
-  },
-
-  {
-    "id": 19,
-    "name": "Parking Lot 1 (Placeholder)",
-    "category": "parking",
-    "lat": 33.2100,
-    "lng": -97.1530,
-    "description": "Replace with real parking lot name and coordinates."
+    "floorMap": {
+      "file": "maps/university_union.pdf",
+      "floors": 4
+    }
   },
   {
-    "id": 20,
-    "name": "Parking Lot 2 (Placeholder)",
-    "category": "parking",
-    "lat": 33.2110,
-    "lng": -97.1540,
-    "description": "Replace with real parking lot name and coordinates."
+    "id": "victory_hall",
+    "name": "Victory Hall",
+    "lat": 33.20231245026655,
+    "lng": -97.15795379216786,
+    "description": "Victory Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/victory_hall.pdf",
+      "floors": 4
+    }
   },
   {
-    "id": 21,
-    "name": "Parking Lot 3 (Placeholder)",
-    "category": "parking",
-    "lat": 33.2120,
-    "lng": -97.1550,
-    "description": "Replace with real parking lot name and coordinates."
-  },
-
-  {
-    "id": 6,
-    "name": "Chick-fil-A @ Union",
-    "category": "dining",
-    "lat": 3321088,
-    "lng": -97.14742,
-    "description": "Dining option inside the University Union."
-  },
-  {
-    "id": 7,
-    "name": "Mean Greens Café",
-    "category": "dining",
-    "lat": 33.2100,
-    "lng": -97.1520,
-    "description": "Café with healthy options for students."
-  },
-  {
-    "id": 8,
-    "name": "Apogee Stadium",
+    "id": "welcome_center",
+    "name": "Welcome Center",
+    "lat": 33.20766410195064,
+    "lng": -97.14662708419455,
+    "description": "Welcome Center",
     "category": "other",
-    "lat": 33.2078,
-    "lng": -97.1560,
-    "description": "Home of UNT football games."
+    "floorMap": {
+      "file": "maps/welcome_center.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "west_hall",
+    "name": "West Hall",
+    "lat": 33.211767735871796,
+    "lng": -97.15543914956102,
+    "description": "West Hall",
+    "category": "residence",
+    "floorMap": {
+      "file": "maps/west_hall.pdf",
+      "floors": 3
+    }
+  },
+  {
+    "id": "willis_library",
+    "name": "Willis Library",
+    "lat": 33.2101234,
+    "lng": -97.1490072,
+    "description": "Willis Library",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/willis_library.pdf",
+      "floors": 5
+    }
+  },
+  {
+    "id": "wooten_hall",
+    "name": "Wooten Hall",
+    "lat": 33.20986189397871,
+    "lng": -97.1456601414825,
+    "description": "Wooten Hall",
+    "category": "academic",
+    "floorMap": {
+      "file": "maps/wooten_hall.pdf",
+      "floors": 4
+    }
+  },
+  {
+    "id": "bruceteria",
+    "name": "Bruceteria",
+    "lat": 33.212215934997865,
+    "lng": -97.15036660244843,
+    "description": "Bruceteria",
+    "category": "dining"
+  },
+  {
+    "id": "kitchen_west",
+    "name": "Kitchen West",
+    "lat": 33.211832514093956,
+    "lng": -97.15558800918849,
+    "description": "Kitchen West",
+    "category": "dining"
+  },
+  {
+    "id": "champs",
+    "name": "Champs",
+    "lat": 33.202594560643114,
+    "lng": -97.15861703978419,
+    "description": "Champs",
+    "category": "dining"
+  },
+  {
+    "id": "mean_greens",
+    "name": "Mean Greens",
+    "lat": 33.20736752149068,
+    "lng": -97.15019110277937,
+    "description": "Mean Greens",
+    "category": "dining"
+  },
+  {
+    "id": "datcu_stadium",
+    "name": "Datcu Stadium",
+    "lat": 33.20388484889255,
+    "lng": -97.15920983358363,
+    "description": "Datcu Stadium",
+    "category": "other",
+    "floorMap": {
+      "file": "maps/datcu_stadium.pdf",
+      "floors": 6
+    }
   }
 ]

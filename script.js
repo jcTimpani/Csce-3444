@@ -1,163 +1,215 @@
 const UNT_CENTER = [33.2075, -97.1526];
-let map, markers = [], locationsData = [], routingControl = null;
+let map, markers = [], locationsData = [];
+let currentBuilding = null;
+let currentFloorIndex = 0;
+let fuse; // Fuse.js instance
 
-
+// ------------------- Map Initialization -------------------
 function initMap() {
-  map = L.map("map", { center: UNT_CENTER, zoom: 15 });
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: "&copy; OpenStreetMap"
-  }).addTo(map);
+    map = L.map("map", { center: UNT_CENTER, zoom: 15 });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap"
+    }).addTo(map);
 }
 
-
-function createMarker(loc) {
-  const m = L.marker([loc.lat, loc.lng]).addTo(map);
-  m.bindPopup(`<strong>${loc.name}</strong><br>${loc.description || ""}`);
-  m.on("click", () => focusLocation(loc.id));
-  return m;
+// ------------------- Markers -------------------
+function createMarker(l) {
+    const m = L.marker([l.lat, l.lng]).addTo(map);
+    const popupContent = `
+        <strong>${l.name}</strong><br/>
+        ${l.description || ""}<br/>
+        <button onclick="openBuildingMap('${l.id}')" style="margin-top:5px; cursor:pointer;">View Floor Plan</button>
+    `;
+    m.bindPopup(popupContent);
+    m.on("click", () => highlightListItem(l.id));
+    return m;
 }
-
 
 function renderMarkers(locs) {
-  markers.forEach(m => map.removeLayer(m));
-  markers = locs.map(createMarker);
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+    locs.forEach(l => markers.push(createMarker(l)));
 }
 
-
+// ------------------- Location List -------------------
 function renderList(locs) {
-  const list = document.getElementById("locationList");
-  list.innerHTML = "";
-  const container = document.getElementById("directionsContainer");
-  container.innerHTML = "";
-
-  if (!locs.length) {
-    const li = document.createElement("li");
-    li.textContent = "No locations found.";
-    li.className = "empty";
-    list.appendChild(li);
-    return;
-  }
-
-  locs.forEach(loc => {
-    const li = document.createElement("li");
-    li.textContent = loc.name;
-    li.className = "location-item";
-    li.onclick = () => focusLocation(loc.id);
-    list.appendChild(li);
-  });
+    const list = document.getElementById("locationList");
+    list.innerHTML = "";
+    locs.sort((a, b) => a.name.localeCompare(b.name)).forEach(l => {
+        const li = document.createElement("li");
+        li.textContent = l.name;
+        li.className = "location-item";
+        li.onclick = () => {
+            renderMarkers([l]);
+            map.setView([l.lat, l.lng], 17);
+            highlightListItem(l.id);
+            document.getElementById("showAllBtn").style.display = "block";
+        };
+        li.ondblclick = () => openBuildingMap(l.id);
+        list.appendChild(li);
+    });
 }
-
-
-function focusLocation(id) {
-  const loc = locationsData.find(l => l.id === id);
-  if (!loc) return;
-
-  map.setView([loc.lat, loc.lng], 17);
-  highlightListItem(id);
-  showDirectionsButton(loc);
-}
-
 
 function highlightListItem(id) {
-  const name = locationsData.find(l => l.id === id)?.name;
-  document.querySelectorAll(".location-item").forEach(li => {
-    li.classList.toggle("active", li.textContent === name);
-  });
+    document.querySelectorAll(".location-item").forEach(i => {
+        i.classList.toggle("active", i.textContent === locationsData.find(x => x.id === id).name);
+    });
 }
 
-
+// ------------------- Filters -------------------
 function filterLocations() {
-  const text = document.getElementById("searchInput").value.trim().toLowerCase();
-  const activeCategories = Array.from(document.querySelectorAll(".category-filter"))
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
-
-  const filtered = locationsData.filter(loc =>
-    activeCategories.includes(loc.category) &&
-    (loc.name.toLowerCase().includes(text) ||
-     (loc.description && loc.description.toLowerCase().includes(text)))
-  );
-
-  renderMarkers(filtered);
-  renderList(filtered);
-  return filtered;
+    const checked = Array.from(document.querySelectorAll(".category-filter:checked")).map(c => c.value);
+    const filtered = checked.length ? locationsData.filter(l => checked.includes(l.category)) : locationsData;
+    renderMarkers(filtered);
+    renderList(filtered);
+    document.getElementById("showAllBtn").style.display = "none";
 }
 
+document.getElementById("showAllBtn").onclick = () => filterLocations();
+document.querySelectorAll(".category-filter").forEach(c => c.addEventListener("change", filterLocations));
 
-function showDirectionsButton(loc) {
-  const container = document.getElementById("directionsContainer");
-  container.innerHTML = "";
-  const btn = document.createElement("button");
-  btn.textContent = `Get Directions to ${loc.name}`;
-  btn.style.width = "100%";
-  btn.onclick = () => showDirections(loc);
-  container.appendChild(btn);
-}
-
-
-function clearDirectionsButton() {
-  const container = document.getElementById("directionsContainer");
-  if (container) container.innerHTML = "";
-}
-
-
-function showDirections(dest) {
-  if (routingControl) map.removeControl(routingControl);
-
-  const start = navigator.geolocation
-    ? (position => [position.coords.latitude, position.coords.longitude])
-    : UNT_CENTER;
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      pos => addRoute(pos.coords.latitude, pos.coords.longitude, dest.lat, dest.lng),
-      () => addRoute(UNT_CENTER[0], UNT_CENTER[1], dest.lat, dest.lng)
-    );
-  } else {
-    addRoute(UNT_CENTER[0], UNT_CENTER[1], dest.lat, dest.lng);
-  }
-}
-
-
-function addRoute(startLat, startLng, endLat, endLng) {
-  routingControl = L.Routing.control({
-    waypoints: [
-      L.latLng(startLat, startLng),
-      L.latLng(endLat, endLng)
-    ],
-    routeWhileDragging: false,
-    addWaypoints: false,
-    draggableWaypoints: false,
-    createMarker: (i, wp) => L.marker(wp.latLng)
-  }).addTo(map);
-}
-
-
-function initFilters() {
-  const search = document.getElementById("searchInput");
-  search.addEventListener("input", filterLocations);
-  search.addEventListener("keydown", e => {
-    if (e.key === "Enter") {
-      const filtered = filterLocations();
-      if (filtered.length) focusLocation(filtered[0].id);
-    }
-  });
-
-  document.querySelectorAll(".category-filter").forEach(cb => {
-    cb.addEventListener("change", filterLocations);
-  });
-}
-
-
+// ------------------- Load Locations -------------------
 async function loadLocations() {
-  const res = await fetch("data/locations.json");
-  locationsData = await res.json();
-  filterLocations();
+    const r = await fetch("data/locations.json");
+    locationsData = await r.json();
+    filterLocations();
+    buildSearchIndex(); // Initialize Fuse.js
 }
 
+// ------------------- Fuse.js Search -------------------
+const searchInput = document.getElementById("searchInput");
+const autocompleteList = document.getElementById("autocompletelist");
 
+function buildSearchIndex() {
+    fuse = new Fuse(locationsData, {
+        keys: [
+            { name: 'name', weight: 0.7 },
+            { name: 'category', weight: 0.2 },
+            { name: 'description', weight: 0.1 }
+        ],
+        includeMatches: true,
+        threshold: 0.35
+    });
+}
+
+function renderAutocomplete(results) {
+    autocompleteList.innerHTML = "";
+    if (!results.length) {
+        autocompleteList.style.display = "none";
+        return;
+    }
+    results.forEach(res => {
+        const item = res.item;
+        const li = document.createElement("li");
+        li.textContent = item.name + (item.category ? ` (${item.category})` : '');
+        li.dataset.id = item.id;
+        li.onclick = () => selectSearchResult(item.id);
+        autocompleteList.appendChild(li);
+    });
+    autocompleteList.style.display = "block";
+}
+
+function selectSearchResult(id) {
+    const l = locationsData.find(x => x.id === id);
+    if (!l) return;
+
+    renderMarkers([l]); // show only selected marker
+    map.setView([l.lat, l.lng], 17);
+    highlightListItem(id);
+    autocompleteList.style.display = "none";
+    searchInput.value = ""; // optional: clear search input
+}
+
+searchInput.addEventListener("input", function () {
+    const query = searchInput.value.trim();
+    if (!query) {
+        autocompleteList.style.display = "none";
+        return;
+    }
+    const results = fuse.search(query, { limit: 10 });
+    renderAutocomplete(results);
+});
+
+document.addEventListener("click", function (e) {
+    if (!searchInput.contains(e.target) && !autocompleteList.contains(e.target)) {
+        autocompleteList.style.display = "none";
+    }
+});
+
+// ------------------- Modal Logic -------------------
+function openBuildingMap(id) {
+    const l = locationsData.find(x => x.id === id);
+    if (!l) return;
+
+    currentBuilding = l;
+    currentFloorIndex = 0;
+
+    document.getElementById("modalTitle").textContent = l.name;
+    document.getElementById("mapModal").style.display = "flex";
+
+    updateModalView();
+}
+
+function updateModalView() {
+    const pdfViewer = document.getElementById("pdfViewer");
+    const noMapMsg = document.getElementById("noMapMessage");
+    const floorIndicator = document.getElementById("floorIndicator");
+    const prevBtn = document.getElementById("prevFloorBtn");
+    const nextBtn = document.getElementById("nextFloorBtn");
+
+    if (currentBuilding.floorMap && currentBuilding.floorMap.file) {
+        pdfViewer.style.display = "block";
+        noMapMsg.style.display = "none";
+        const pageNum = currentFloorIndex + 1;
+        pdfViewer.src = `${currentBuilding.floorMap.file}#page=${pageNum}`;
+        floorIndicator.textContent = `Floor ${pageNum}`;
+        prevBtn.disabled = currentFloorIndex === 0;
+        nextBtn.disabled = currentFloorIndex === currentBuilding.floorMap.floors - 1;
+    } else if (currentBuilding.floorPlans && currentBuilding.floorPlans.length > 0) {
+        pdfViewer.style.display = "block";
+        noMapMsg.style.display = "none";
+        pdfViewer.src = currentBuilding.floorPlans[currentFloorIndex];
+        floorIndicator.textContent = `Floor ${currentFloorIndex + 1}`;
+        prevBtn.disabled = currentFloorIndex === 0;
+        nextBtn.disabled = currentFloorIndex === currentBuilding.floorPlans.length - 1;
+    } else {
+        pdfViewer.style.display = "none";
+        noMapMsg.style.display = "block";
+        floorIndicator.textContent = "Floor -";
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+    }
+}
+
+document.getElementById("closeModalBtn").onclick = () => {
+    document.getElementById("mapModal").style.display = "none";
+    document.getElementById("pdfViewer").src = "";
+};
+
+document.getElementById("prevFloorBtn").onclick = () => {
+    if (currentFloorIndex > 0) {
+        currentFloorIndex--;
+        updateModalView();
+    }
+};
+
+document.getElementById("nextFloorBtn").onclick = () => {
+    const maxFloor = currentBuilding.floorMap
+        ? currentBuilding.floorMap.floors - 1
+        : currentBuilding.floorPlans
+            ? currentBuilding.floorPlans.length - 1
+            : 0;
+
+    if (currentFloorIndex < maxFloor) {
+        currentFloorIndex++;
+        updateModalView();
+    }
+};
+
+// ------------------- Initialize -------------------
+window.openBuildingMap = openBuildingMap;
 window.addEventListener("DOMContentLoaded", () => {
-  initMap();
-  loadLocations().then(initFilters);
+    initMap();
+    loadLocations();
 });

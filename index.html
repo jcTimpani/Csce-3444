@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>UNT Interactive Campus Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+
 </head>
+
 <body>
-  <header class="top-bar"><h1>UNT Interactive Campus Map</h1></header>
+  <header class="top-bar">
+    <h1>UNT Interactive Campus Map</h1>
+  </header>
   <div class="layout">
     <aside class="sidebar">
 
       <div class="sidebar-section">
         <h2>Search</h2>
         <input type="text" id="searchInput" placeholder="Search buildings…" />
-        <ul id= " autocompletelist" class="autocomplete-List"></ul>
+        <ul id= "autocompletelist" class="autocomplete-List"></ul>
 
         <div id="directionsContainer"></div>
       </div>
@@ -23,24 +29,41 @@
 
       <div class="sidebar-section">
         <h2>Categories</h2>
-        <label><input type="checkbox" class="category-filter" value="academic" /> Academic</label><br/>
-        <label><input type="checkbox" class="category-filter" value="dining" /> Dining</label><br/>
-        <label><input type="checkbox" class="category-filter" value="parking" /> Parking</label><br/>
-        <label><input type="checkbox" class="category-filter" value="other" /> Other</label>
+        <label><input type="checkbox" class="category-filter" value="academic" /> Academic</label><br />
+        <label><input type="checkbox" class="category-filter" value="dining" /> Dining</label><br />
+        <label><input type="checkbox" class="category-filter" value="residence" /> Residence</label><br />
+        <label><input type="checkbox" class="category-filter" value="other"  /> Other</label>
       </div>
 
  
       <div class="sidebar-section">
         <h2>Locations</h2>
+        <button id="showAllBtn" style="display:none; width:100%; margin-bottom: 5px; padding: 5px;">Show All</button>
         <ul id="locationList"></ul>
       </div>
 
     </aside>
-
-
     <main class="map-container">
       <div id="map"></div>
     </main>
+  </div>
+
+  <div id="mapModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Building Name</h2>
+        <button id="closeModalBtn">Return to Map</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdfViewer" src="" width="100%" height="500px"></iframe>
+        <div id="noMapMessage" style="display:none;">No map available for this building.</div>
+      </div>
+      <div class="modal-footer">
+        <button id="prevFloorBtn">Previous Floor</button>
+        <span id="floorIndicator">Floor 1</span>
+        <button id="nextFloorBtn">Next Floor</button>
+      </div>
+    </div>
   </div>
 
 
@@ -48,4 +71,5 @@
   <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
